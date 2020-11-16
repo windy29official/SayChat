@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "539115075831",
+    "firebase_url": "https://saychat-2c2dd.firebaseio.com",
+    "project_id": "saychat-2c2dd",
+    "storage_bucket": "saychat-2c2dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:539115075831:android:32d73acf8d48e65ca77bf2",
+        "android_client_info": {
+          "package_name": "com.windypermadi.saychat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "539115075831-und0046khul91n8m172f4ktmicerdgqi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.windypermadi.saychat",
+            "certificate_hash": "4b57b7a5f78ed2c9863cf9b5a358bda4104d87dc"
+          }
+        },
+        {
+          "client_id": "539115075831-cf7ghsar3fa9sea6un2kkup8r3qbc3tn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATKxBEfSQzzsTGG7Z8_QNQ-aziSwH-vcE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "539115075831-cf7ghsar3fa9sea6un2kkup8r3qbc3tn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

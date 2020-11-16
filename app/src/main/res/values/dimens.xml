@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fontsize11">11sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fontsize">14sp</dimen>
+    <dimen name="fontHeader18">18sp</dimen>
+    <dimen name="fontHeader20">20sp</dimen>
+    <dimen name="list_item_spacing">16dp</dimen>
+    <dimen name="list_item_spacing_half">8dp</dimen>
+</resources>

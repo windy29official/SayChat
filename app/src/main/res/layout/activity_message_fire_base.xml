@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAbu"
+    tools:context=".MessageFireBase">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:padding="8dp"
+            android:id="@+id/img"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/img"
+            android:gravity="center_vertical"
+            android:maxLength="15"
+            android:textSize="17sp"
+            android:text="Username"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/colorWhite"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/menu_lain"
+            android:layout_width="45dp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentEnd="true"
+            android:padding="8dp"
+            android:tint="@color/colorWhite"
+            android:src="@drawable/ic_more_vert_black_24dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/telp"
+            android:layout_width="45dp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_toStartOf="@+id/menu_lain"
+            android:padding="10dp"
+            android:src="@drawable/ic_local_phone_black_24dp"
+            android:tint="@color/colorWhite"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/video"
+            android:layout_width="45dp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_toStartOf="@+id/telp"
+            android:padding="8dp"
+            android:src="@drawable/ic_videocam_black_24dp"
+            android:tint="@color/colorWhite"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_pesan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/pesan"
+        android:layout_below="@+id/toolbar"
+        android:tint="@color/colorWhite">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/pesan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparan">
+
+        <EditText
+            android:id="@+id/et_pesan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="3dp"
+            android:layout_toStartOf="@+id/btn_kirim"
+            android:background="@drawable/bt_uiborder"
+            android:hint="Type a message"
+            android:padding="12dp"
+            tools:ignore="Autofill,HardcodedText,TextFields" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_kirim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="3dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_send_black_24dp"
+            android:tint="@color/colorWhite"
+            app:backgroundTint="@color/colorPrimary"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+
+</RelativeLayout>
